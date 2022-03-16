@@ -1,9 +1,9 @@
-import { Component } from '@angular/core';
-import { Select, Store } from '@ngxs/store';
+import { Component, OnDestroy, OnInit } from '@angular/core';
+// import { Store } from '@ngxs/store';
 
-import { Observable } from 'rxjs';
-import { SignInWithGoogle, SignOutFromGoggle } from './store/app.actions';
-import { AppState, AppStateModel } from './store/app.state';
+// import { Observable } from 'rxjs';
+// import { SignInWithGoogle, SignOutFromGoggle } from './store/app.actions';
+// import { AppStateModel } from './store/app.state';
 
 @Component({
   selector: 'app-root',
@@ -11,18 +11,20 @@ import { AppState, AppStateModel } from './store/app.state';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'ngxs-learning-proj';
-@Select(AppState) user$: Observable<AppStateModel>;
+  title = 'NGXS Learning Project';
+//   user$: Observable<AppStateModel>;
 
-  constructor(private store:Store){
-    // this.user$ = this.store.select(state=> state);
-  }
-signIn(username:string, email:string){
-  console.log(username, email)
-  this.store.dispatch(new SignInWithGoogle(username, email));
+//   constructor(private store:Store){
+//     this.user$ = this.store.select(state=>state.select.user);
+//   }
 
-}
-signOut(uid:string){
-  this.store.dispatch(new SignOutFromGoggle(uid));
-}
+// signIn(username:string, email:string){
+//   console.log(username, email)
+//   this.store.dispatch(new SignInWithGoogle(username, email));
+
+// }
+// signOut(uid:string){
+//   this.store.dispatch(new SignOutFromGoggle(uid));
+// }
+
 }

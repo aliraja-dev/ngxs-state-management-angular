@@ -1,12 +1,18 @@
-<button (click)="signIn('Ali', 'Ali@gmail.com')">Sign In with google</button>
+<!-- <button (click)="signIn('Ali', 'Ali@gmail.com')">Sign In with google</button>
 <button (click)="signOut('12345667')">Sign out from google</button>
 
-<div *ngIf="user$ | async as user">
+<div *ngIf="user$ | async as user; else loading">
   <h3>Username {{ user.username }}</h3>
 
   <h6>{{ user.email }}</h6>
   <h6>{{ user.uid }}</h6>
 </div>
 
-<!-- <h6>Email {{}}</h6>
-<h6>User ID {{}}</h6> -->
+<ng-template #loading>
+  <h3>Fetching data from server</h3>
+</ng-template> -->
+
+<!-- <ng-if-as></ng-if-as> -->
+<hr />
+<app-create></app-create>
+<app-read></app-read>

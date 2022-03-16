@@ -1,0 +1,9 @@
+<div class="right">
+  <h3>Tutorials</h3>
+  <ul>
+    <li *ngFor="let tutorial of tutorials$ | async">
+      <a [href]="tutorial.url" target="_blank">{{ tutorial.name }}</a>
+      <a (click)="delTutorial(tutorial.name)"> -- Delete </a>
+    </li>
+  </ul>
+</div>
