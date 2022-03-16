@@ -1,10 +1,12 @@
 # NgxsLearningProj
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.2.4.
-#Installation Details
+
+# Installation Details
+
 Run $npm install at the root of the project for dependencies
 
-#Project Details
+# Project Details
 
 This project is about incorporating NGXS into an angular app and maintaining a store and updating and listening to it. Created a tutorial list app using the https://coursetro.com/ NGXS post as a loose inspiration and further changed the State names and added another tag fields to understand clearly the NGXS process in contrast to the usual Singleton Service used as a cross communication mechanism for unrelated components in Angular apps as a single source of truth.
 
