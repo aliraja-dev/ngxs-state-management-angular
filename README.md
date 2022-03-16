@@ -1,6 +1,8 @@
 # NgxsLearningProj
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.2.4.
+#Installation Details
+Run $npm install at the root of the project for dependencies
 
 #Project Details
 
