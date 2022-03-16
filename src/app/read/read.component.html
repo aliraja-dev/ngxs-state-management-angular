@@ -1,9 +1,17 @@
 <div class="right">
-  <h3>Tutorials</h3>
-  <ul>
-    <li *ngFor="let tutorial of tutorials$ | async">
-      <a [href]="tutorial.url" target="_blank">{{ tutorial.name }}</a>
-      <a (click)="delTutorial(tutorial.name)"> -- Delete </a>
+  <h3>List</h3>
+  <ul class="list-group">
+    <li *ngFor="let tutorial of tutorials$ | async" class="list-group-item">
+      <a
+        [href]="tutorial.url"
+        class="fw-bold text-decoration-none"
+        target="_blank"
+        >{{ tutorial.name }}</a
+      >
+      <p class="fst-italic fw-light">{{ tutorial.tags }}</p>
+      <button class="btn btn-danger" (click)="delTutorial(tutorial.name)">
+        -- Delete
+      </button>
     </li>
   </ul>
 </div>

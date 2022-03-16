@@ -1,18 +1,23 @@
-<!-- <button (click)="signIn('Ali', 'Ali@gmail.com')">Sign In with google</button>
-<button (click)="signOut('12345667')">Sign out from google</button>
-
-<div *ngIf="user$ | async as user; else loading">
-  <h3>Username {{ user.username }}</h3>
-
-  <h6>{{ user.email }}</h6>
-  <h6>{{ user.uid }}</h6>
+<div class="navbar flex p-5 bg-dark text-light">
+  <a routerLink="/" class="text-light text-decoration-none fs-5 fw-bold"
+    >NGXS State Management</a
+  >
+  <ul class="navbar-nav ms-auto">
+    <li class="nav-item fw-bold">
+      <a
+        href="https://github.com/aliraja-dev"
+        class="text-decoration-none"
+        target="_blank"
+        >Ali Raja :Github</a
+      >
+    </li>
+  </ul>
 </div>
 
-<ng-template #loading>
-  <h3>Fetching data from server</h3>
-</ng-template> -->
-
-<!-- <ng-if-as></ng-if-as> -->
-<hr />
-<app-create></app-create>
-<app-read></app-read>
+<div class="container-md mt-5">
+  <div class="row text-center">
+    <h3>Tutorial TODO List for FrontEnd Track</h3>
+    <app-create class="col p-5"></app-create>
+    <app-read class="col p-5"></app-read>
+  </div>
+</div>

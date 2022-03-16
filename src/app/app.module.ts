@@ -13,6 +13,7 @@ import { NgIfAs } from './test/test.component';
 import { CreateComponent } from './create/create.component';
 import { ReadComponent } from './read/read.component';
 import { TutorialState } from './state/tutorial.state';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 
 @NgModule({
@@ -30,6 +31,7 @@ import { TutorialState } from './state/tutorial.state';
     }),
     NgxsLoggerPluginModule.forRoot(),
     NgxsReduxDevtoolsPluginModule.forRoot(),
+    NgbModule,
 
   ],
   providers: [],

@@ -14,9 +14,13 @@ export class TutorialStateModel{
   defaults: {
     tutorials:[
       {name: 'NGXS Coursetro Tutorial',
-      url: 'https://coursetro.com/posts/code/152/Angular-NGXS-Tutorial---An-Alternative-to-Ngrx-for-State-Management'},
+      url: 'https://coursetro.com/posts/code/152/Angular-NGXS-Tutorial---An-Alternative-to-Ngrx-for-State-Management',
+      tags:['angular', 'ngxs']},
+
       {name: 'Coursetro NGXS Youtube',
-      url: 'https://www.youtube.com/watch?v=SfiO3bDUK7Q'},
+      url: 'https://www.youtube.com/watch?v=SfiO3bDUK7Q',
+      tags:['angular', 'ngxs', 'state management']
+      },
     ]
   }
 })

@@ -14,8 +14,9 @@ export class CreateComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  addTutorial(name:string, url:string){
-    this.store.dispatch(new AddTutorial({name, url}))
+  addTutorial(name:string, url:string, tags:string){
+    const tagsArray = tags.split(',');
+    this.store.dispatch(new AddTutorial({name, url, tags: tagsArray}))
   }
 
 
