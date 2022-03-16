@@ -4,12 +4,9 @@ import { NgxsModule } from '@ngxs/store';
 import { NgxsLoggerPluginModule } from '@ngxs/logger-plugin';
 import { NgxsReduxDevtoolsPluginModule } from '@ngxs/devtools-plugin';
 
-import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
 import { environment } from 'src/environments/environment.prod';
 
-// import { AppState } from './store/app.state';
-import { NgIfAs } from './test/test.component';
+import { AppComponent } from './app.component';
 import { CreateComponent } from './create/create.component';
 import { ReadComponent } from './read/read.component';
 import { TutorialState } from './state/tutorial.state';
@@ -19,13 +16,11 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 @NgModule({
   declarations: [
     AppComponent,
-    NgIfAs,
     CreateComponent,
     ReadComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
     NgxsModule.forRoot([TutorialState], {
       developmentMode: !environment.production
     }),
